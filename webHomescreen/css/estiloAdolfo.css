@@ -1,0 +1,217 @@
+
+body{
+	background-color: black;
+	background-image: url("../imagenes/back/5acb0fa15f920.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+h1{
+	color: #FFFFFF;
+
+	text-align: center;
+
+	font-size: 90px;
+
+	text-shadow: 10px;
+
+	-webkit-text-stroke-width: 2px;
+
+    -webkit-text-stroke-color: black;
+
+    margin-bottom: 0px;
+
+	margin-top: 35px;
+}
+
+main{
+
+	display: grid;
+
+	grid-template-columns: 30% 40% 30%;
+
+}
+
+#Buscadores{
+
+	text-align: center;
+
+	grid-column-start:2;
+
+	grid-column-end: 3;
+}
+
+#lefNav{
+
+	grid-column-start: 1;
+
+	grid-column-end: 2;
+
+	grid-row-start: 1;
+
+	grid-row-end: 2;
+
+	background-color: none;
+
+	color:white;
+
+	margin-top: -40px;
+
+}
+
+.searchEngines{
+
+	width: 500px;
+
+	border:4px solid #AFAEAE;
+
+	display:inline-block;
+
+	margin-top:-5px;
+
+	padding:0;
+
+}
+
+#gsearch, #duckSearch{
+
+	background-color: #222222 !important;
+	display:inline-block;
+	color:white;
+	margin-top: 0px;
+}
+
+.gcse-search{
+
+	width: 500px !important;
+
+	background-color: #222222 !important;
+
+}
+
+#duckSearch{
+
+
+	width: 500px ;
+
+	padding-right: 0 ;
+
+    padding-left: 0 ;
+
+    border:none;
+
+    height: 35px;
+
+    margin: 0em;
+
+	padding: 0em;
+
+	display:none;
+
+	margin-top: 0px;
+
+}
+
+#imgCentro{
+
+	width: 500px;
+	height: 450px;
+	border:4px solid #AFAEAE;
+}
+
+#centro{
+
+	padding-top: 0px;
+	display:inline-block;
+	
+
+}
+
+
+
+
+
+/* LOS PEOS DE GOOGLE SEARCH BAR */
+
+
+
+.gsc-search-button, #gsib_b{
+
+	display: none !important;
+
+}
+
+.gsc-control-cse {
+    padding: 0em !important;
+}
+
+.gsc-results-wrapper-overlay{
+
+	/* Color del wrapper de google cuando emite resultados*/
+
+	background-color: #222222 !important;
+
+}
+
+table.gsc-search-box td.gsc-input {	
+
+    padding-right: 0 !important;
+
+    padding-left: 0 !important;
+
+    background-color: #222222 !important;
+
+
+}
+
+.gsc-input-box {
+    border: none !important;
+
+    background-color: #222222 !important;
+}
+
+.gsib_a {
+    padding: 0px !important;
+
+    padding-top: 5px !important;
+
+    padding-bottom: 5px !important;
+
+    background-color: #222222 !important;
+}
+
+.gsc-modal-background-image {
+    
+    background-color: black !important;
+
+}
+
+.gsc-control-cse {
+    border-color: #222222 !important;
+    background-color: #222222 !important;
+}
+
+.gsc-input {
+   
+    background: #222222 url() no-repeat scroll left center !important;
+
+    color:white !important;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.icono{
+
+	width: 64px;
+	height: 64px;
+}
+/* Comienzo de lo bueno */
+
+
+
+/* Nada es bueno porque vivir es sufrir */
+
+
