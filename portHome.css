@@ -1,0 +1,81 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+
+	margin:0px;
+	padding:0px;
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 20% 80%;
+	grid-template-rows: 30% 40% 30%;
+	color:white;
+	background-color: black;
+}
+
+nav{
+
+	grid-column-start: 1;
+	grid-column-end: 2;
+	list-style-type: none;
+	grid-row-start: 2;
+	margin-top:25%;
+	margin-left: 10%;
+	margin-bottom: 25%;
+}
+
+header{
+
+	grid-column-start: 2;
+	grid-row-start: 2;
+}
+
+
+
+
+/** Fin de ubicaciones **/
+
+nav{
+
+
+}
+
+ul{
+
+}
+
+li{
+	list-style-type: none;
+	margin-bottom:20px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 150%;
+}
+
+.texto1{
+
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 200%;
+}
+
+#hello{
+
+	margin-left: 20%;
+
+}
+
+#doing{
+
+	text-align: right;
+	margin-right: 20%
+
+}
+
+#miNombre{
+	text-align: center;
+	font-size: 700%;
+	margin-right: 10%;
+}

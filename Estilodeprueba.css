@@ -46,6 +46,17 @@ table {
 
 /*Fin del RESET*/
 
+
+
+
+
+
+
+
+
+
+/*
+
 #centradobloque{
 	display:block;
 	margin-left: auto;
@@ -137,10 +148,13 @@ footer{
 	margin: 10px 80px;
 
 }
-/*hovers*/
+
+--------hovers---------
 nav li:hover {
 	-webkit-transform: scale(1.2);
 }
 aside blockquote:hover {
 	-webkit-transform: scale(1.2);
 }
+
+*/
