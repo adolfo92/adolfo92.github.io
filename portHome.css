@@ -72,7 +72,6 @@ nav li:hover{
 	font-size: 200%;
 }
 
-
 #hello{
 
 	margin-left: 20%;
@@ -88,8 +87,9 @@ nav li:hover{
 
 #miNombre{
 	text-align: center;
-	font-size: 700%;
+	font-size: 800%;
 	margin-right: 20%;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 /** fin de LetrasTop **/
@@ -112,12 +112,25 @@ nav li:hover{
 	padding:0px;
 	height: 90vh;
 	display: grid;
-	grid-template-columns: 40% 30% 30%;
-	grid-template-rows: 30% 40% 30%;
-	color:white;
+	grid-template-columns: 45% 40% 15%;
+	color:black;
 	background-color: #FFF2E0 ;
 
 }
+
+.texto2{
+
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 100%;
+}
+
+#aboutme{
+
+	margin-top: 25%;
+	margin-bottom: 25%;
+
+}
+
 
 /**-------------------------DIV SKILLS-------------------------*/
  #Skills{
@@ -138,21 +151,21 @@ nav li:hover{
 
 	margin:0px;
 	padding:0px;
-	height: 90vh;
+	height: 95vh;
 	display: grid;
 	grid-template-columns: 20% 80%;
 	grid-template-rows: 30% 40% 30%;
-	color:white;
+	color:black;
 	background-color: #FFF2E0 ;
 }
 
 /**-------------------------DIV CONTACT-------------------------*/
 
-#SContact{
+#Contact{
 
  	margin:0px;
 	padding:0px;
-	height: 90vh;
+	height: 50vh;
 	display: grid;
 	grid-template-columns: 20% 80%;
 	grid-template-rows: 30% 40% 30%;
