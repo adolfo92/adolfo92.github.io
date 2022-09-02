@@ -12,28 +12,20 @@ html {
 	margin:0px;
 	padding:0px;
 	height: 100vh;
-	/*width: 100vw;*/
 	display: grid;
-	grid-template-columns: 20% 80%;
-	grid-template-rows: 30% 40% 30%;
 	color:white;
 	background-color: #0E0E0E;
 }
 
 nav{
-
-	grid-column-start: 1;
-	grid-column-end: 2;
 	list-style-type: none;
-	grid-row-start: 1;
 	margin-top:25%;
 	margin-left: 10%;
 	margin-bottom: 25%;
 }
 
 header{
-	grid-column-start: 2;
-	grid-row-start: 2;
+
 }
 
 #TextoTop{
@@ -44,7 +36,7 @@ header{
 
 
 
-/** Fin de ubicaciones **/
+/** Comportamiento de iconos **/
 
 
 
@@ -68,35 +60,6 @@ nav li:hover{
 
 }
 
-/** fin de Navegacion **/
-
-.texto1{
-
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 200%;
-}
-
-#hello{
-
-	margin-left: 20%;
-
-}
-
-#doing{
-
-	text-align: right;
-	margin-right: 35%
-
-}
-
-#miNombre{
-	text-align: center;
-	font-size: 800%;
-	margin-right: 20%;
-	font-family: 'Ubuntu', sans-serif;
-}
-
-/** fin de LetrasTop **/
 
 
 
@@ -110,73 +73,37 @@ nav li:hover{
 
 /*-------------------------DIV ABOUT-------------------------**/
 
-#About{
 
-	margin:0px;
-	padding:0px;
-	height: 90vh;
-	display: grid;
-	grid-template-columns: 45% 40% 15%;
-	color:black;
-	background-color: #FFF2E0 ;
-
-}
-
-.texto2{
-
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 100%;
-}
-
-#aboutme{
-
-	margin-top: 25%;
-	margin-bottom: 25%;
-
-}
 
 
 /**-------------------------DIV SKILLS-------------------------*/
- #Skills{
 
- 	margin:0px;
-	padding:0px;
-	height: 90vh;
-	display: grid;
-	grid-template-columns: 20% 80%;
-	grid-template-rows: 30% 40% 30%;
-	color:white;
-	background-color: #0E0E0E;
 
- }
+
 /**-------------------------DIV PROYECTS-------------------------*/
 
-#Projects{
 
-	margin:0px;
-	padding:0px;
-	height: 95vh;
-	display: grid;
-	grid-template-columns: 20% 80%;
-	grid-template-rows: 30% 40% 30%;
-	color:black;
-	background-color: #FFF2E0 ;
-}
 
 /**-------------------------DIV CONTACT-------------------------*/
 
-#Contact{
 
- 	margin:0px;
-	padding:0px;
-	height: 50vh;
-	display: grid;
-	grid-template-columns: 20% 80%;
-	grid-template-rows: 30% 40% 30%;
-	color:white;
-	background-color: #0E0E0E;
 
- }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*--------------------- TOP BUTTON ------------------------*/
 
