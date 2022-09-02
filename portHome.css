@@ -7,16 +7,55 @@ html {
   scroll-behavior: smooth;
 }
 
+/*---------------- Homepage inicio ----------------------*/
+.background{
+	background-image: url("img/Sea_Background_horizontal_5464x3070.jpg");
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	background-size: cover;
+  }
+	
+	
+/*
+#background #water {
+	position: absolute;
+	background-image: url("img/NoSolidTranspateng.png");
+	background-size: cover;
+	top:0;
+	left:0;
+	height: 100%;
+	width: 100%;
+	filter: url("#turbulence");
+	}
+	*/
+
 #top{
 
 	margin:0px;
 	padding:0px;
 	height: 100vh;
-	display: grid;
-	color:white;
-	background-color: #0E0E0E;
-}
+	font-family: playball;
+	color:#F3F7FE;	
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+	filter: none;
 
+	
+}
+#topHeader{
+	flex:1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-left: 25px;
+	text-shadow: 2px 2px 3px #007695;
+
+
+}
 nav{
 	list-style-type: none;
 	margin-top:25%;
@@ -24,15 +63,23 @@ nav{
 	margin-bottom: 25%;
 }
 
-header{
-
+#greeting{
+	font-size: 120px;
+	margin-top: 130px;
 }
-
-#TextoTop{
-
-	margin-top: 5%;
-
+#myNameIs{
+	margin-top: -80px;
+	font-size: 150px;
+	margin-left: 50px;
 }
+#imDoing{
+	font-size: 50px;
+	margin-bottom: 100px;
+	margin-left: 20px;
+	margin-top: -80px;
+}
+/*---------------- Homepage Fin ------------------------*/
+
 
 
 
@@ -65,29 +112,11 @@ nav li:hover{
 
 
 
-
-
-
-
-
-
-/*-------------------------DIV ABOUT-------------------------**/
-
-
-
-
-/**-------------------------DIV SKILLS-------------------------*/
-
-
-
-/**-------------------------DIV PROYECTS-------------------------*/
-
-
-
-/**-------------------------DIV CONTACT-------------------------*/
-
-
-
+/*----------Fonts-------------*/
+@font-face {
+	font-family: playball;
+	src: url(fonts/playball/Playball-Regular.ttf);
+}
 
 
 
