@@ -5,7 +5,7 @@
 	--myBlue:#282E43;
 	--darkWhite:#DDDDDD;
 	--lightWhite:#EEEEEE;
-	--square-Ratio: 
+
 }
 
 body{
@@ -26,15 +26,15 @@ body{
 }
 
 #blueBox{
-background-color: var(--myBlue);
-width: 200vw;
-height: 200vh;
-rotate: 30deg;
-box-shadow: 20px 0px 0.5;
-margin-top: -70%;
-margin-left: -145%;
-position: absolute;
-z-index: 2;
+	background-color: var(--myBlue);
+	width: 200vw;
+	height: 200vh;
+	rotate: 30deg;
+	box-shadow: 20px 0px 0.5;
+	margin-top: -70%;
+	margin-left: -145%;
+	position: absolute;
+	z-index: 2;
 
 
 }
@@ -72,8 +72,8 @@ z-index: 2;
 	width: 50%;
 	max-width: 400px;
 	min-width: 300px;
-	margin-right: 20px;
-	margin-bottom: -20px;
+	margin-right: 10%;
+	margin-bottom: -40px;
 }
 .topL{
 	padding-right: 5px;
@@ -98,7 +98,7 @@ z-index: 2;
 	-webkit-text-stroke-color: var(--lightWhite);
 	padding-right: 50px;
 	margin-bottom: -60px;
-	margin-left: 10px;
+	margin-left: 30px;
 }
 .textWrap  h1{
 	font-size: calc(4vw + 50px);
@@ -108,12 +108,50 @@ z-index: 2;
 .textWrap  h3{
 	font-size: calc(1vw + 26px);
 	margin-bottom: 0px
+}
 
+.botL{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 70px;
+	margin-top: -50px;
 
 }
 
+.push{display: inline-block;}
+
+nav > ul > li{
+	list-style: none;
+	font-size: calc(1vw + 20px);
+	font-weight:600;
+	margin-top: 40px;
+	color: var(--lightWhite);
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: var(--myBlue);
+}
 
 footer{
 	height: 5vh;
+	min-height: 32px;
 	background-color: var(--myBlue);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+footer > ul{
+	color: var(--lightWhite);
+	list-style: none;
+	margin:0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+}
+ 
+a > img{
+	color: #DDDDDD;
 }
