@@ -30,7 +30,7 @@ body{
 	width: 200vw;
 	height: 200vh;
 	rotate: 30deg;
-	box-shadow: 20px 0px 0.5;
+	box-shadow: 5px 5px 30px #535353;
 	margin-top: -70%;
 	margin-left: -145%;
 	position: absolute;
@@ -72,6 +72,7 @@ body{
 	width: 300px;
 	margin-right: 10%;
 	margin-bottom: -60px;
+	box-shadow: 5px 5px 15px #252525;
 }
 .topL{
 	padding-right: 5px;
@@ -104,7 +105,7 @@ body{
 	margin-top: 30px;
 }
 .textWrap  h3{
-	font-size: calc(1vw + 26px);
+	font-size: calc(1vw + 15px);
 	margin-bottom: 0px
 }
 
@@ -118,7 +119,9 @@ body{
 
 }
 
-.push{display: inline-block;}
+.push{
+	display: inline-block;
+}
 
 nav > ul > li{
 	list-style: none;
@@ -148,6 +151,12 @@ footer > ul{
 	justify-content: center;
 	align-items: center;
 	gap: 50px;
+}
+
+footer >ul> li{
+	border: solid #FF882B 1px;
+	border-radius: 50%;
+	padding: 8px;
 }
  
 a > img{
