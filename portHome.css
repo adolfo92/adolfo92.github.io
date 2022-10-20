@@ -5,6 +5,7 @@
 	--myBlue:#282E43;
 	--darkWhite:#DDDDDD;
 	--lightWhite:#EEEEEE;
+	--square-Ratio: 
 }
 
 body{
@@ -28,9 +29,10 @@ body{
 background-color: var(--myBlue);
 width: 200vw;
 height: 200vh;
-rotate: 35deg;
-margin-top: -80%;
-margin-left: -130%;
+rotate: 30deg;
+box-shadow: 20px 0px 0.5;
+margin-top: -70%;
+margin-left: -145%;
 position: absolute;
 z-index: 2;
 
@@ -41,11 +43,73 @@ z-index: 2;
 	display: inline-block;
 	width: 100vw;
 	height: 95vh;
-	background-color:rgba(0, 0, 255, 0.5);
+	
 	position: relative;
 	z-index: 3;
 
+	/*--------- flex setup -----------------*/
+
+	display: flex;
+	flex-direction: column;
+
 }
+
+.top, .bottom{
+	height: 50%;
+	display: flex;
+}
+
+.top > *, .bottom>*{
+	flex:1;
+}
+
+.myPhoto>*{
+	border-radius: 100%;
+	border-width: 5px;
+	border-style: solid;
+	box-sizing:content-box;
+	border-color: var(--myOrange);
+	width: 50%;
+	max-width: 400px;
+	min-width: 300px;
+}
+.topL{
+	padding-right: 5px;
+	width: fit-content;
+	display: flex;
+	flex-direction: column-reverse;
+	text-align: end;
+	
+}
+.topR{
+
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: flex-end;
+	justify-content: center;
+
+}
+
+.textWrap{
+	display: inline-block;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: var(--lightWhite);
+	padding-right: 50px;
+	margin-bottom: -60px;
+	margin-left: 10px;
+}
+.textWrap  h1{
+	font-size: calc(4vw + 50px);
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+.textWrap  h3{
+	font-size: calc(1vw + 26px);
+	margin-bottom: 0px
+
+
+}
+
 
 footer{
 	height: 5vh;
