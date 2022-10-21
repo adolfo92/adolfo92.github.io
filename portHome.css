@@ -124,6 +124,16 @@ body{
 	display: inline-block;
 }
 
+a{
+	text-decoration: none;
+}
+
+a, a:visited, a:hover, a:active{
+	color: inherit;
+}
+
+nav{display: inline-block;}
+
 nav > ul > li{
 	list-style: none;
 	font-size: calc(1vw + 20px);
@@ -132,14 +142,13 @@ nav > ul > li{
 	color: var(--lightWhite);
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: var(--myBlue);
-	transition: color 0.05s ease-out ;
+	transition: color 0.1s ease-out ;
+
 }
 
 nav >ul>li:hover{
 	color: var(--myOrange);
 }
-
-
 
 footer{
 	height: 5vh;
