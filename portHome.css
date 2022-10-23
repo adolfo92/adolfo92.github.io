@@ -33,15 +33,18 @@ body{
 	background-color: var(--myBlue);
 	width: 200vw;
 	height: 200vh;
-	rotate: 30deg;
+	transform: rotate(30deg);
+	-webkit-transform: rotate(30deg); /* Safari and Chrome */
+	-o-transform: rotate(30deg); /* Opera */
+	-moz-transform: rotate(30deg); /* Firefox */
+	-ms-transform: rotate(30deg); /* IE 9 */
 	box-shadow: 5px 5px 30px #535353;
 	margin-top: -70%;
 	margin-left: -145%;
 	position: absolute;
 	z-index: 2;
-
-
 }
+
 
 .test{
 	display: inline-block;
