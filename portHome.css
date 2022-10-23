@@ -76,7 +76,9 @@ body{
 	border-style: solid;
 	box-sizing:content-box;
 	border-color: var(--myOrange);
-	width: 300px;
+	width: 15vw;
+	max-width: 300px;
+	min-width: 150px;
 	margin-right: 10%;
 	margin-bottom: -60px;
 	box-shadow: 5px 5px 15px #252525;
