@@ -107,7 +107,7 @@ function paintObject(object) {
   let picture = document.createElement("img");
   picture.classList.add("projectPicture");
   picture.src = object.picture;
-  containerDiv.classList.add("card");
+  containerDiv.classList.add("card-body");
 
   containerDiv.appendChild(name);
   containerDiv.appendChild(description);
@@ -142,3 +142,27 @@ function paintContact() {
 let aboutMeBtn = document.querySelector("#aboutMe");
 let portfolioBtn = document.querySelector("#portfolio");
 let contactBtn = document.querySelector("#contact");
+
+aboutMeBtn.addEventListener("click", () => {
+  aboutMeBtn.classList.add("active");
+  portfolioBtn.classList.remove("active");
+  contactBtn.classList.remove("active");
+
+  paintAboutMe();
+});
+
+portfolioBtn.addEventListener("click", () => {
+  aboutMeBtn.classList.remove("active");
+  portfolioBtn.classList.add("active");
+  contactBtn.classList.remove("active");
+
+  paintAllProjects();
+});
+
+contactBtn.addEventListener("click", () => {
+  aboutMeBtn.classList.remove("active");
+  portfolioBtn.classList.remove("active");
+  contactBtn.classList.add("active");
+
+  paintContact();
+});
