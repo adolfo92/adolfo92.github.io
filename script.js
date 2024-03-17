@@ -2,14 +2,14 @@
 
 let aboutMeContent = [
   "I'm Adolfo Castro, from Caracas, Venezuela. I'm doing web development and many other computer related stuff.",
-  "Currently i'm studying Electrical Engineering at Universidad Central de Venezuela with focus on telecomunications and getting a TSU (Bachelor sort of degree) on Informatic engineering at UNETI.",
+  "Currently i'm studying Electrical Engineering at Universidad Central de Venezuela with focus on telecomunications, and also getting a TSU (Bachelor sort of degree) on Informatic engineering at UNETI.",
   "I enjoy doing Linux ricing (Desktop enviroment modifications), and automating tasks using linux BASH CLI.",
-  "My current focus on my programming career is mainly on backend develpment and data analysis with python but i can also do web development using many technologies like vanilla JS with bootstrap and/or Wordpress, and Nodejs environment techs like React and Express",
+  "My current focus on my programming career is mainly on backend development and data analysis with python, but i can also do web development using many technologies like vanilla JS with bootstrap and/or Wordpress, and Nodejs environment techs like React and Express",
   "I'm also aviable to learn any other technologies that might be of use like Golang, Rust, etc.",
 ];
 
 let contactContent = [
-  "Currently i have no personal email service running, any request you can send it tho the following e-mail address",
+  "Currently i have no personal email service running. Any request you can send it to the following e-mail address",
   "adolfo92dev@gmail.com",
 ];
 
@@ -65,14 +65,28 @@ function killChilds() {
 
 function paintAboutMe() {
   killChilds();
+  sectionField.style.display = "flex";
+  sectionField.style.flexFlow = "row nowrap";
+
+  let myphoto = document.createElement("img");
+  myphoto.src = "/pictures/myPhoto.jpg";
+  myphoto.classList.add("Myphoto");
+
+  let textField = document.createElement("div");
+  textField.classList.add("aboutMeText");
+
+  sectionField.appendChild(myphoto);
+  sectionField.appendChild(textField);
 
   for (i = 0; i < aboutMeContent.length; i++) {
     let paragraph = document.createElement("p");
     paragraph.textContent = aboutMeContent[i];
 
-    sectionField.appendChild(paragraph);
+    textField.appendChild(paragraph);
   }
 }
+
+paintAboutMe();
 
 // ------------------------ Portfolio field ---------------
 
@@ -93,32 +107,45 @@ function project(name, desc, link, pic) {
 
 function paintObject(object) {
   let containerDiv = document.createElement("div");
+  containerDiv.classList.add("card");
+
+  let cardBody = document.createElement("div");
+  cardBody.classList.add("card-body");
 
   let name = document.createElement("h3");
   name.textContent = object.name;
+  name.classList.add("card-title");
 
   let description = document.createElement("p");
+  description.classList.add("card-text");
   description.textContent = object.description;
 
   let link = document.createElement("a");
   link.href = object.link;
+  link.classList.add("btn");
+  link.classList.add("btn-primary");
   link.textContent = "Go to github";
 
   let picture = document.createElement("img");
   picture.classList.add("projectPicture");
+  picture.classList.add("card-img-top");
+
   picture.src = object.picture;
   containerDiv.classList.add("card-body");
 
-  containerDiv.appendChild(name);
-  containerDiv.appendChild(description);
-  containerDiv.appendChild(link);
+  cardBody.appendChild(name);
+  cardBody.appendChild(description);
+  cardBody.appendChild(link);
   containerDiv.appendChild(picture);
+  containerDiv.appendChild(cardBody);
 
   sectionField.appendChild(containerDiv);
 }
 
 function paintAllProjects() {
   killChilds();
+  sectionField.style.display = "flex";
+  sectionField.style.flexFlow = "row wrap";
   for (i = 0; i < portfolioContent.length; i++) {
     paintObject(portfolioContent[i]);
   }
@@ -128,11 +155,15 @@ function paintAllProjects() {
 
 function paintContact() {
   killChilds();
-
+  sectionField.style.display = "block";
   for (i = 0; i < contactContent.length; i++) {
     let paragraph = document.createElement("p");
     paragraph.textContent = contactContent[i];
+    paragraph.style.textAlign = "center";
 
+    if (i == contactContent.length - 1) {
+      paragraph.classList.add("email");
+    }
     sectionField.appendChild(paragraph);
   }
 }
