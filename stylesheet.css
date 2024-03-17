@@ -1,0 +1,66 @@
+body {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+header {
+  margin-top: 0;
+  background-color: #212122;
+  color: #faf9f6;
+  padding-bottom: 3px;
+}
+
+section {
+  margin: 10px;
+  background-color: #faf9f6;
+  margin-bottom: 50px;
+}
+.Myphoto {
+  height: 50vh;
+}
+
+.aboutMeText {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  max-width: 600px;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  border: solid 2px;
+}
+.card:hover {
+  background-color: #f1f9ec;
+}
+
+.card-body > img {
+  width: 200px;
+  height: 200px;
+}
+
+.email {
+  font-size: large;
+  font-weight: 500;
+}
+
+footer {
+  background-color: #212122;
+  color: #faf9f6;
+}
+
+footer > p {
+  margin: auto;
+  padding-left: 5px;
+  font-size: small;
+}
+
+@media (width<=544px) {
+  img {
+    display: none;
+  }
+}
