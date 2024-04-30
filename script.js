@@ -50,6 +50,13 @@ let portfolioContent = [
     "https://adolfo92.github.io/Tic-Tac-Toe/",
     "tictactoe.png"
   ),
+
+  project(
+    "Recipees website",
+    "Bootstrap website served with flask via Vercel deployment",
+    "https://uneti-m2-t1-prog1-proyecto1-5oiq0nvph-adolfo92s-projects.vercel.app/",
+    "recetario.png"
+  )
 ];
 
 // Mutable secion functions
